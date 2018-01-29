@@ -6,7 +6,7 @@ class User:
     def __init__(self, password, id):
         # initialize list of tuples of preferred clubs and their scores
         self.ranking_list = []
-        # encrypt password and store
+        # encrypt password and storep
         self.hashed_password = pbkdf2_sha256.hash(password)
         # user's year of graduation
         self.id = id
